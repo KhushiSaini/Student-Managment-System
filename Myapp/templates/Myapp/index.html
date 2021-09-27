@@ -1,0 +1,61 @@
+
+{% block content %}
+{% load staticfiles %}
+<div style="width:100%; height:100%">
+<div style="width:30%;height:15%; background-color:black; float:left">
+<img src="{% static "logo.png"%}" alt="logo" style="width:40%; height: 100%">
+</div>
+<div style="width:70%; font-size:20;color:red;height:15%; background-color:black; float:right">
+<h2><b><pre><u>  JAIPUR ENGINEERING COLLEGE  </u></pre></b></h2>
+</div>
+
+<div style="width:100%; height:100%">
+
+<div style="width:100%; height:15%; font-size:20px; color:yellow;background-color: black; float:left">
+<h3><pre><i>                                   STUDENT MANAGEMENT PORTAL</i>        
+<marquee scrollamount="10%"> Education is service to mankind</marquee> </pre></h3>
+</div>
+<div style="width:100%; float:left">
+<div style="width:20%;background-color:#CCCCCC;float:left">
+<a href="{% url 'Myapp:index' %}"><h1>Home</h1><a>
+</div>
+<div style="width:20%;background-color:#CCCCCC;float:left">
+<a href="{% url 'Myapp:indexkk' %}"><h1>Admission</h1></a>
+</div>
+<div style="width:20%;background-color:#CCCCCC;float:left">
+<a href="{% url 'Myapp:indexjj' %}"><h1>Exam</h1></a>
+</div>
+<div style="width:20%;background-color:#CCCCCC;float:left">
+<a href="{% url 'Myapp:index' %}"><h1>About</h1></a>
+</div>
+<div style="width:20%;background-color:#CCCCCC;float:left">
+<a href="{% url 'Myapp:index'%}"><h1>Contact</h1></a>
+</div>
+</div>
+<div style="width:100%; color:blue">
+<div style="width:25%; height:45%; background-color:#F0E68C; float:left">
+<img src="{% static "aa.png"%}" alt="logo" style="width:100%; height: 100%">
+
+</div>
+<div style="width:50%; height:45%; background-color:#F0E68C; float:left">
+<img src="{% static "smskk.png"%}" alt="logo" style="width:100%; height: 100%">
+</div>
+<div style="width:25%; height:45%; background-color:#F0E68C; float:left">
+<img src="{% static "c.png"%}" alt="logo" style="width:100%; height: 100%">
+</div>
+<div style="width:25%; height:45%; background-color:#F0E68C; float:left">
+<img src="{% static "bookkk.png"%}" alt="logo" style="width:100%; height: 100%">
+</div>
+<div style="width:50%; height:45%; background-color:#F0E68C; float:left">
+<img src="{% static "jietkk.png"%}" alt="logo" style="width:100%; height: 100%">
+</div>
+<div style="width:25%; height:45%; background-color:#F0E68C; float:left">
+<img src="{% static "bbb.png"%}" alt="logo" style="width:100%; height: 100%">
+</div>
+</div>
+<div style="width:100%;color:blue">
+<div style="width:100%; background-color:001100;height:14%; float:left">
+<h1><i><pre>                                @2019     </pre></i></h1>
+</div>
+</div>
+{% endblock %}

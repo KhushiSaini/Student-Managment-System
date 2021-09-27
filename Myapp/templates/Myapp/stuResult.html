@@ -1,0 +1,23 @@
+{% extends 'Myapp/base.html' %}
+
+{% block content %}
+
+<table border=1px width=80%>
+<caption>Student Details</cation>
+<tr bgcolor= "red"><th>Student ID</th>
+	<th>Student Name</th>
+	<th>Email</th>
+	<th>Address</th></tr>
+<tr>
+	<td>{{stuGet.studentid}}</td>
+	<td>{{stuGet.studentname}}</td>
+	<td>{{stuGet.email}}</td>
+	<td>{{stuGet.result}}</td>
+<td><h1>
+	<a href="{% url 'Myapp:stuDelete' %}?urlstudentid={{ stuGet.studentid }}">
+	delete</a></h1></td>
+</tr>
+
+
+</table>
+{%endblock%}

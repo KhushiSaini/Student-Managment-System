@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<div style="width:100%; height:100%">
+<div style="width:30%;height:15%; background-color:#001100; float:left">
+<img src="{% static "logo.png"%}" alt="logo" style="width:40%; height: 100%">
+</div>
+<div style="width:70%; font-size:20;color:#FFFFFF;height:15%; background-color:#001100; float:right">
+<h2><b><pre><u>  JAIPUR ENGINEERING COLLEGE  </u></pre></b></h2>
+</div>
+<div style="width: 100%; height: 10%; background-color:sandybrown; font-size: 150%; word-spacing:3PX; align-content: middle; float:left;">
+<a href="{% url 'Myapp:index' %}">HOME</a>
+<a href="{% url 'Myapp:stuRegister' %}">NEW STUDENT</a>
+
+<a >BRANCH WISE:</a>
+	<a href="{% url 'Myapp:indexcse' %}">CSE Branch</a>
+	<a href="{% url 'Myapp:indexce' %}">CE Branch</a>
+	<a href="{% url 'Myapp:indexee' %}">EE Branch</a>
+	<a href="{% url 'Myapp:indexme' %}">ME Branch</a>
+	<a href="{% url 'Myapp:indexec' %}">EC Branch</a>
+</div>
+
+<div style= "background-color:lightgreen; color: black; width:100%"><marquee align="middle" width="75%" behavior="scroll" direction="left" scrollamount="15" style="font-size: 150%">Admissions Open </marquee>
+</div>
+{% block content %}
+
+{% endblock %}

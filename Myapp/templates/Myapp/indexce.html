@@ -1,0 +1,32 @@
+ {% extends 'Myapp/base.html' %}
+
+{% block content %}
+
+<table border=1px width=80%>
+<caption><h3> CE Student</h3></caption>
+<tr bgcolor= "red"><th>Student ID</th>
+	<th>Student Name</th>
+	<th>Email</th>
+	<th>Address</th>
+	<th>Marks</th>
+	<th>Result</th></tr>
+{% for i in ceList %}
+<tr>
+	<td>{{i.studentid}}</td>
+	<td>{{i.studentname}}</td>
+	<td>{{i.email}}</td>
+	<td>{{i.address}}</td>
+	<td>{{i.marks}}</td>
+	<td>{{i.result}}</td>
+<td><h1>
+	<a href="{% url 'Myapp:stuDelete' %}?urlstudentid={{ i.studentid }}">
+	delete</a></h1></td>
+	<td><h1><a href="{% url 'Myapp:stuDetail' %}?urlstudentid={{ i.studentid }}">
+	Result</a></h1></td>
+	
+
+</tr>
+
+{% endfor%}
+
+{%endblock %}

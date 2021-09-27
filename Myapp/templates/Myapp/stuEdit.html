@@ -1,0 +1,22 @@
+{% extends 'Myapp/base.html' %}
+
+{% block content %}
+
+<form method = "GET" action = "stuUpdate">
+	{% csrf_token %}
+	<p><input type="hidden" value={{stuGet.studentid}} name="urlstudentid"/></p>
+	<p><input type="text" value={{stuGet.studentname}} name="urlstudentname"/></p>
+	<p><input type="text" value={{stuGet.email}} name="urlemail"/></p>
+	<p><input type= " text" value={{stuGet.address}} name="urladdress"/></p>
+	<p><input type="text" value={{stuGet.attendance}} name="urladdress"></p>
+	
+
+
+
+	<p><input type="submit"/></p>
+<h1>
+	<a href="{% url 'Myapp:index' %}">
+	index</a></h1>
+	</form>
+
+{% endblock %}
